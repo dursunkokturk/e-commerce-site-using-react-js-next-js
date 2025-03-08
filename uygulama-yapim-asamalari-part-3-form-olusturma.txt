@@ -1,0 +1,16 @@
+projenin ana sayfasi olan ve app klasoru icinde buluna 
+page.tsx dosyasini root klasoru icine tasiyoruz.
+
+Form uzerinde kullaniciya yapilan islemlerin sonucunu bildirim ekrani gostermek icin
+toast notificayion kullanacagiz.
+Bunun icin kullanacagimiz komut satiri
+npm install react-hot-toast
+
+Kullaniciya bildirim verme islemlerini uygulamanin her yerinde gecerli hale getirmek icin
+proje klasoru icinde providers klasoru icinde toast-provider.tsx dosyasi icinde duzenliyoruz.
+
+app klasoru icindeki layout.tsx dosyasi icinde 
+ToastProvider Componenti kullnarak herkesin gormesini sagliyoruz.
+
+Components klasoru icindeki modal klasoru icinde 
+store-modal.tsx dosyasinda form islemlerini yapiyoruz.
