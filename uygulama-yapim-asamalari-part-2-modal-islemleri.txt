@@ -1,0 +1,21 @@
+admin panelinde yapilacak islemlerde kullanilacak paketleri install ediyoruz.
+kurulacak paketler:
+alert dialog paketinin kurulumu icin komut satiri
+npx shadcn@latest add alert-dialog
+
+butona tiklandiginda acilacak ekran paketi kurulumu icin komut satiri
+npx shadcn@latest add alert-dialog
+
+admin panelinde kullanilacak paketlerin yonetimi icin 
+components klasoru icinde modals klasoru icinde modal.tsx dosyasi olusturuyoruz.
+
+Popup ekrani seklinde pencere cikmasi icin 
+components klasoru icindeki modals klasoru icinde 
+alert-dialog.tsx dosyasi olusturuyoruz
+
+Tum sayfalarda durum yonetimi icin zustand kutuphanesini kullanarak 
+use-store-modal.tsx dosyasinda islem yapiyoruz.
+
+Yapilan islem sonucunun tum sayfalarda gorunmesi icin 
+proje klasoru icinde provider klasoru icinde 
+modal-provider.tsx dosyasi olusturuyoruz

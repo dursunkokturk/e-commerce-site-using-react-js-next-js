@@ -1,0 +1,39 @@
+Proje adini verdikten sonra kurulum adimlarini tamamliyoruz.
+
+Projede kullanilacak admin panali icin clerk hazir sistemini kullanacagiz.
+clerk kullaniminda geken islemlerin adimlarini ve detaylarini gormek icin
+clerk.com sitesinini kullanacagiz.
+
+clerk sisteminin dahil edilebilmesi icin ilk olarak API key olusturulmasi gerekiyor.
+API key olusturmak icin clerk.com sitesine login olmak gerekiyor.
+
+login olma islemi esnasinda proje adini girdikten sonra 
+sisteme giris yapilirken hangi ogelerin girilmesini istiyorsak 
+karsimiza cikan secim ekraninda gereken secimleri yapiyoruz.
+
+Bu islemlerin ardindan karsimiza API key cikacak.
+Aldigimiz API key data sini proje klasoru icinde olusturulacak .env uzantili dosya icine yaziyoruz.
+Proje klasoru icinde olusturulan ve icinde 
+API key data si bulunan .env uzantili dosyayi hic kimseyle paylasmamak icin
+.gitignore dosyasina dosya adini giriyoruz.
+
+Simdi proje klasoru icine clerk kurulumu yapmak gerekiyor.
+kurulum icin npm install @clerk/nextjs komutunu kullaniyoruz.
+
+Uygulamayi yaparken App klasoru icinde islem yapilan layout.tes dosyasi icindeki 
+layout.tsx dosyasinda return alani icindeki kod yapisini 
+ClerkProvider Component icine aliyoruz.
+
+Clerk sisteminde guvenlik isleminin yapilabilmesi icin 
+proje klasoru icinde middleware.ts dosyasinda gereken islemlerin yapilacagi kodlari 
+clerk.com sitesinden aliyoruz.
+
+sign-in ve sign-up islemlerinin yapilmasi icin 
+app klasoru icinde auth isimli grup olusturuyoruz. 
+Olusturulan auth grubunun icinde sign-in ve sign-up klasorlerini ve dosyalari olusturuyoruz.
+sign-in ve sign-up klasorlerini olustururken 
+[[...sign-in]] ve [[...sign-up]] yapisi seklinde klasorler olusturup 
+dosyalari bu klasorler icinde olusturuyoruz.
+
+auth grubunun icinde layout.tsx dosyasi olusturuyoruz ve 
+dogrulama islemlerini bu dosya uzerinden yapiyoruz.
